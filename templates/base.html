@@ -1,11 +1,11 @@
 <html>
     <head>
         <title> {% block title %}{% endblock %} - Blog da Ros&meire </title>
-        <link rel="stylesheet" href="/static/style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
     </head>
 
     <body>
-        <h1> Blog da Ros&meire  </h1>
+        <h1> Blog da Ros&meire </h1>
         <nav>
         </nav>
         <section class="content">
