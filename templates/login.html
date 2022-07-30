@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 
-{% block title %} Register {% endblock %}
+{% block title %} Login {% endblock %}
 
 {% block content %}
-
+<form method="POST"> 
+    <label for="username"> Username: </label> 
+    <input id="user_name" name="username" required>
+    <label for="password"> Password: </label> 
+    <input id="password" name="password" required, type="password">
+    <!-- <button> Login </button> -->
+    <input type="submit" value="Login">
+</form>
 {% endblock %}
